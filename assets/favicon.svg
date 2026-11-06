@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="chaqueñoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b3a1a"/>
+      <stop offset="50%" stop-color="#ab4b24"/>
+      <stop offset="100%" stop-color="#c48232"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#chaqueñoGrad)"/>
+  <!-- Guarda chaqueña ancestral estilizada -->
+  <path d="M12 32 L32 12 L52 32 L32 52 Z" fill="none" stroke="#faf7f2" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="5" fill="#faf7f2"/>
+  <path d="M22 32 L32 22 L42 32 L32 42 Z" fill="none" stroke="#f3ede2" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="32" cy="18" r="2.5" fill="#faf7f2"/>
+  <circle cx="32" cy="46" r="2.5" fill="#faf7f2"/>
+  <circle cx="18" cy="32" r="2.5" fill="#faf7f2"/>
+  <circle cx="46" cy="32" r="2.5" fill="#faf7f2"/>
+</svg>

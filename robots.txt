@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raicesdelchaco.com.ar/sitemap.xml

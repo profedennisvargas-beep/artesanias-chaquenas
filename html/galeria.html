@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería fotográfica de artesanías chaqueñas: registro visual de tejidos Wichí, tallas en palo santo, cestería Qom y manos artesanas de El Impenetrable.">
+  <title>Galería Fotográfica & Saberes | Raíces del Chaco</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos de Producción -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar__container">
+      <div class="top-bar__item">
+        <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+        <span>Fotografías auténticas de talleres y manos artesanas de El Impenetrable</span>
+      </div>
+      <div class="top-bar__item top-bar__socials">
+        <span>Síguenos:</span>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://wa.me/5493624000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navegación -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="../index.html" class="logo">
+        <div class="logo__icon"><i class="fa-solid fa-gem"></i></div>
+        <div class="logo__text">
+          <span class="logo__brand">Raíces del Chaco</span>
+          <span class="logo__tagline">Artesanías & Cultura Ancestral</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav-menu" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="nosotros.html" class="nav__link">Identidad</a></li>
+          <li class="nav__item"><a href="catalogo.html" class="nav__link">Catálogo</a></li>
+          <li class="nav__item"><a href="galeria.html" class="nav__link active">Galería</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+        <div class="nav__cta-mobile">
+          <a href="catalogo.html" class="btn btn--primary btn--sm">Ver Catálogo</a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a href="catalogo.html" class="btn btn--primary header__btn-desktop">
+          <i class="fa-solid fa-bag-shopping"></i> Catálogo
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner de Página -->
+  <div class="page-banner">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../index.html">Inicio</a>
+        <span class="separator">/</span>
+        <span>Galería</span>
+      </div>
+      <h1 class="page-banner__title">Galería de Obras & Saberes</h1>
+      <p class="page-banner__subtitle">
+        Una mirada íntima al detalle de cada creación, las materias primas del monte y el oficio paciente transmitido por generaciones.
+      </p>
+    </div>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- Pestañas de Filtros -->
+        <div class="gallery-filters" role="tablist">
+          <button class="gallery-tab active" data-filter="all" role="tab" aria-selected="true">Todas las Obras</button>
+          <button class="gallery-tab" data-filter="chaguar" role="tab" aria-selected="false">Tejidos Chaguar</button>
+          <button class="gallery-tab" data-filter="maderas" role="tab" aria-selected="false">Palo Santo & Tallas</button>
+          <button class="gallery-tab" data-filter="alfareria" role="tab" aria-selected="false">Alfarería & Cestería</button>
+          <button class="gallery-tab" data-filter="proceso" role="tab" aria-selected="false">Manos Artesanas</button>
+        </div>
+
+        <!-- Malla de la Galería -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-item" data-category="chaguar">
+            <div class="gallery-item__img-box">
+              <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=800&q=80" alt="Yica tradicional Wichí en fibra de chaguar" loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__tag">Wichí &bull; Chaguar</span>
+                <h4 class="gallery-item__title">Yica Tradicional "Ojo de Lechuza"</h4>
+                <p class="gallery-item__desc">Puntos tradicionales de malla con tintes de corteza de mistol y algarrobo.</p>
+                <button class="gallery-item__zoom-btn" aria-label="Ampliar imagen" data-img="https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=1400&q=85" data-title="Yica Tradicional 'Ojo de Lechuza'" data-desc="Bolso ancestral Wichí confeccionado en telar rústico con fibra de bromelia chaqueña. Tintes 100% orgánicos." data-origin="Misión Nueva Pompeya, El Impenetrable">
+                  <i class="fa-solid fa-expand"></i> Ver Obra
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item" data-category="maderas">
+            <div class="gallery-item__img-box">
+              <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Talla de fauna chaqueña en palo santo" loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__tag">Palo Santo &bull; Escultura</span>
+                <h4 class="gallery-item__title">Tatú Carreta Esculpido</h4>
+                <p class="gallery-item__desc">Talla a cuchillo en duramen verde aromático con acabado de cera de monte.</p>
+                <button class="gallery-item__zoom-btn" aria-label="Ampliar imagen" data-img="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1400&q=85" data-title="Tatú Carreta Esculpido en Palo Santo" data-desc="Pieza escultórica que rinde tributo a la fauna sagrada del bosque seco chaqueño. Vetas naturales y fragancia perenne." data-origin="Castelli, Chaco">
+                  <i class="fa-solid fa-expand"></i> Ver Obra
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item" data-category="alfareria">
+            <div class="gallery-item__img-box">
+              <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80" alt="Tinaja rústica de barro cocido chaqueño" loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__tag">Qom &bull; Alfarería</span>
+                <h4 class="gallery-item__title">Tinaja Ritual de Arcilla</h4>
+                <p class="gallery-item__desc">Modelado en barro por chorizos y cocción en foso tradicional a cielo abierto.</p>
+                <button class="gallery-item__zoom-btn" aria-label="Ampliar imagen" data-img="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1400&q=85" data-title="Tinaja Ritual de Arcilla Chaqueña" data-desc="Vasija moldeada a mano con tierra arcillosa de bañados chaqueños, bruñida con cantos rodados." data-origin="Pampa del Indio, Chaco">
+                  <i class="fa-solid fa-expand"></i> Ver Obra
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item" data-category="proceso">
+            <div class="gallery-item__img-box">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Artesana hilando fibras naturales al telar" loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__tag">Saberes &bull; El Oficio</span>
+                <h4 class="gallery-item__title">El Hilado sobre la Pierna</h4>
+                <p class="gallery-item__desc">Técnica centenaria donde cada filamento de chaguar se torsiona sobre el muslo.</p>
+                <button class="gallery-item__zoom-btn" aria-label="Ampliar imagen" data-img="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1400&q=85" data-title="El Hilado sobre la Pierna (Wichí)" data-desc="Registro fotográfico del proceso paciente de torsión de hebras antes de la coloración natural y el tejido en red." data-origin="El Sauzalito, Chaco">
+                  <i class="fa-solid fa-expand"></i> Ver Obra
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item" data-category="chaguar">
+            <div class="gallery-item__img-box">
+              <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80" alt="Camino de mesa con guardas de chaguar y tintes terrosos" loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__tag">Wichí &bull; Fibras</span>
+                <h4 class="gallery-item__title">Tapiz Mural con Tintes de Frutos</h4>
+                <p class="gallery-item__desc">Colores ocres, negros y castaños obtenidos de cáscara de nuez y palo cruz.</p>
+                <button class="gallery-item__zoom-btn" aria-label="Ampliar imagen" data-img="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=1400&q=85" data-title="Tapiz Mural con Tintes de Frutos" data-desc="Patrón geométrico que representa las huellas del ñandú y los senderos del monte nativo." data-origin="Misión Nueva Pompeya, Chaco">
+                  <i class="fa-solid fa-expand"></i> Ver Obra
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-item" data-category="alfareria">
+            <div class="gallery-item__img-box">
+              <img src="https://images.unsplash.com/photo-1617058866164-8bcf9a224a13?auto=format&fit=crop&w=800&q=80" alt="Cestería de palma caranday tejida en espiral" loading="lazy">
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__tag">Qom &bull; Cestería</span>
+                <h4 class="gallery-item__title">Canasto Espiral de Palma Caranday</h4>
+                <p class="gallery-item__desc">Tramado apretado y resistente con hojas seleccionadas del palmar chaqueño.</p>
+                <button class="gallery-item__zoom-btn" aria-label="Ampliar imagen" data-img="https://images.unsplash.com/photo-1617058866164-8bcf9a224a13?auto=format&fit=crop&w=1400&q=85" data-title="Canasto Espiral de Palma Caranday" data-desc="Cestería tradicional cosida a mano mediante técnica de espiral. Ideal para paneras, frutas o decoración." data-origin="Colonia Aborigen, Chaco">
+                  <i class="fa-solid fa-expand"></i> Ver Obra
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox__container">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar vista ampliada">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="lightbox__figure">
+        <img src="" alt="" id="lightbox-img" class="lightbox__img">
+      </div>
+      <div class="lightbox__info">
+        <span class="lightbox__origin" id="lightbox-origin"><i class="fa-solid fa-location-dot"></i> Chaco, Argentina</span>
+        <h3 class="lightbox__title" id="lightbox-title">Título de la Pieza</h3>
+        <p class="lightbox__desc" id="lightbox-desc">Descripción de la artesanía.</p>
+        <div class="lightbox__action">
+          <a href="contacto.html" class="btn btn--accent btn--sm" id="lightbox-btn-inquire">
+            <i class="fa-solid fa-envelope"></i> Consultar por esta pieza
+          </a>
+          <a href="https://wa.me/5493624000000" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--sm" id="lightbox-btn-wa">
+            <i class="fa-brands fa-whatsapp"></i> Preguntar en WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__grid">
+        <div class="footer__col footer__col--brand">
+          <a href="../index.html" class="logo logo--footer">
+            <div class="logo__icon"><i class="fa-solid fa-gem"></i></div>
+            <div class="logo__text">
+              <span class="logo__brand">Raíces del Chaco</span>
+              <span class="logo__tagline">Artesanías & Cultura Ancestral</span>
+            </div>
+          </a>
+          <p class="footer__desc">
+            Emprendimiento autogestionado para la revalorización de la identidad cultural y artesanías de El Impenetrable.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Navegación</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html"><i class="fa-solid fa-angle-right"></i> Inicio</a></li>
+            <li><a href="nosotros.html"><i class="fa-solid fa-angle-right"></i> Identidad y Saberes</a></li>
+            <li><a href="catalogo.html"><i class="fa-solid fa-angle-right"></i> Catálogo de Piezas</a></li>
+            <li><a href="galeria.html"><i class="fa-solid fa-angle-right"></i> Galería Fotográfica</a></li>
+            <li><a href="contacto.html"><i class="fa-solid fa-angle-right"></i> Formulario de Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Especialidades</h4>
+          <ul class="footer__links">
+            <li><a href="catalogo.html?categoria=chaguar"><i class="fa-solid fa-angle-right"></i> Tejidos de Chaguar</a></li>
+            <li><a href="catalogo.html?categoria=palo-santo"><i class="fa-solid fa-angle-right"></i> Tallas en Palo Santo</a></li>
+            <li><a href="catalogo.html?categoria=cesteria"><i class="fa-solid fa-angle-right"></i> Cestería Caranday</a></li>
+            <li><a href="catalogo.html?categoria=ceramica"><i class="fa-solid fa-angle-right"></i> Alfarería Chaqueña</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Redes Sociales</h4>
+          <div class="footer__social-icons">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/5493624000000" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <div class="footer__contact-quick">
+            <p><i class="fa-solid fa-envelope"></i> contacto@raicesdelchaco.com.ar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 <strong>Raíces del Chaco</strong>. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5493624000000" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/galeria.js"></script>
+</body>
+</html>
